@@ -9,7 +9,7 @@ load "config/recipes/rbenv"
 load "config/recipes/check"
 load "config/recipes/monit"
 
-server "69.164.192.207", :web, :app, :db, primary: true
+server "juliobudal.com", :web, :app, :db, primary: true
 
 set :user, "deployer"
 set :application, "blog"
@@ -18,7 +18,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "git@github.com:ryanb/#{application}.git"
+set :repository, "git@github.com:juli0w/#{application}.git"
 set :branch, "master"
 
 set :maintenance_template_path, File.expand_path("../recipes/templates/maintenance.html.erb", __FILE__)
